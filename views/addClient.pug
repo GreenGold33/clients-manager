@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+  form(action='/clients', method='POST')
+    input(name='name',placeholder='Client name...')
+    |
+    input(name='address',placeholder='Client address...')
+    |
+    input(type='submit', value='Send my data!')
