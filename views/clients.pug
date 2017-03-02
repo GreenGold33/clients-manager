@@ -2,8 +2,7 @@ extends layout
 
 block content
 
-  a(href='/client/new') Add a new client
-  h3 You are logged as #{ username }
+  a(href='/admin/client/new') Add a new client
   ul
     each client in clients
       li #{client.name} in #{client.address}
